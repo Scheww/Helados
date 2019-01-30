@@ -30,7 +30,6 @@ define('ROOT_CORE', "http://".$_SERVER["SERVER_NAME"]."/");
         <meta name="og:image:width" content="1200">
         <meta name="og:image:height" content="630">
         <meta name="theme-color" content="#000000">
-        <meta name="google-site-verification" content="nVfj5jg3lxozdx_L3dm3EKZ_fgMrvBxTRXHl1IwlNxU">
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="styles/font.min.css">
         <link rel="stylesheet" href="styles/socicon.min.css">
@@ -47,15 +46,6 @@ define('ROOT_CORE', "http://".$_SERVER["SERVER_NAME"]."/");
         <script type="text/javascript" src="scripts/spin.min.js"></script>
         <script type="text/javascript" src="scripts/function.min.js"></script>
         <script type="text/javascript" src="scripts/start.min.js"></script>
-        <script type="text/javascript">
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-33524287-1', 'auto');
-            ga('send', 'pageview');
-        </script>
     </head>
     <body>
         <header id="header">
