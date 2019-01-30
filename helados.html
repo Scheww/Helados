@@ -6,6 +6,11 @@
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Condensed|Pacifico|Oswald" rel="stylesheet">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <style>
+            @font-face {
+                font-family: 'Lulo Clean';
+                src: url(Lulo_Clean.ttf);
+                font-weight: bold;
+            }
             * {
                 -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
@@ -43,13 +48,11 @@
             }
                 .header-nav {
                     text-align: left;
-                    width: calc(100% - 0px);
-                    height: calc(100% - 0px);
                     white-space: nowrap;
                     display: inline-block;
                     overflow: visible;
                     position: relative;
-                    left: 120px;
+                    left: 100px;
                     top: 50px;
                 }
 
@@ -73,7 +76,6 @@
                             float: left;
                             margin: 0px 16px;
                             font-weight: 400;
-                            letter-spacing: -1px;
                             font-family: 'Oswald', sans-serif;
                             font-size: 19px;
 
@@ -141,10 +143,23 @@
                     }
 
                         .banner-text > h1 >span {
-                            font-size: 150px;
-                            font-family: 'Fredoka One', cursive;
-                            letter-spacing: 15px;
+                            font-size: 115px;
+                            font-family: 'Lulo Clean', cursive;
                             font-weight: 900;
+                        }
+                    .menu {
+                        height: 42px;
+                        min-height: 33px;
+                        width: 130px;
+                        border: 2px solid #ffffff;
+                        margin-left: calc(50% - 65px);
+                        margin-top: 30px;
+                        padding-top: 2px;
+                    }
+                        .menu > span {
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 22px;
+                            font-weight: 800;
                         }
 
         </style>
@@ -178,8 +193,8 @@
                         <h1>
                             <span>HELADO</span>
                         </h1>
-                        <div>
-                            <span>Menú</span>
+                        <div class="menu">
+                            <span>MENÚ</span>
                         </div>
                     </div>
                     <img class="banner-img" src="https://static.wixstatic.com/media/84770f_bdcc40e3b5ce45f4b672692e83f4917b~mv1.png/v1/fill/w_293,h_575,al_c,q_80,usm_0.66_1.00_0.01/84770f_bdcc40e3b5ce45f4b672692e83f4917b~mv1.webp" >
