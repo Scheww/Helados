@@ -1,0 +1,96 @@
+footer#footer {
+    padding: 30px 20px;
+}
+
+    footer#footer .footer-left {}
+
+    footer#footer .footer-right {}
+
+        footer#footer .footer-item {
+            position: relative;
+            height: 32.25px;
+            clear: both;
+        }
+
+        footer#footer .footer-left .footer-item {
+            float: left;
+        }
+
+        footer#footer .footer-right .footer-item {
+            float: right;
+        }
+
+        footer#footer .footer-logo {
+            position: relative;
+            float: left;
+            max-width: 100.0%;
+            height: 100.0%;
+        }
+
+            footer#footer .footer-logo svg {
+                position: relative;
+                float: left;
+                max-width: 100.0%;
+                height: 100.0%;
+            }
+
+        footer#footer .footer-item a {
+            position: relative;
+            float: left;
+            width: 100.0%;
+            height: 100.0%;
+            padding: 6px 0;
+        }
+
+            footer#footer .footer-item a i {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            footer#footer .footer-item.facebook a i {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            footer#footer .footer-item.googleplus a i {}
+
+            footer#footer .footer-item.linkedin a i {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            footer#footer .footer-item.instagram a i {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            footer#footer .footer-left .footer-item a i {
+                float: left;
+                margin-right: 10px;
+            }
+
+            footer#footer .footer-right .footer-item a i {
+                float: right;
+                margin-left: 10px;
+            }
+
+            footer#footer .footer-item a span {
+                position: relative;
+                float: left;
+                margin: 2px 0;
+                font-size: 13px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+
+            footer#footer .footer-left .footer-item a span {
+                float: left;
+            }
+
+            footer#footer .footer-right .footer-item a span {
+                float: right;
+            }

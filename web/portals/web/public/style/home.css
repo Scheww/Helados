@@ -1,0 +1,698 @@
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section h3.section-title {
+    position: relative;
+    float: left;
+    width: 100.0%;
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.layout-section h4.section-subtitle {
+    position: relative;
+    float: left;
+    width: 100.0%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+section.layout-section h3.section-title + h4.section-subtitle {
+    margin-top: 20px;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#home-search {
+    background-attachment: fixed;
+    background-image: url(../image/wedadvisor-section-search.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    section.layout-section#home-search > .section-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+        section.layout-section#home-search > .section-slider > .section-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-animation-duration: 16s;
+            -moz-animation-duration: 16s;
+            -o-animation-duration: 16s;
+            animation-duration: 16s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-name: fade;
+            -moz-animation-name: fade;
+            -o-animation-name: fade;
+            animation-name: fade;
+        }
+
+        section.layout-section#home-search > .section-slider > .section-slide:nth-child(1) {
+            background-image: url(../image/wedadvisor-section-search.jpg);
+            -webkit-animation-delay: 12s;
+            -moz-animation-delay: 12s;
+            -o-animation-delay: 12s;
+            animation-delay: 12s;
+        }
+
+        section.layout-section#home-search > .section-slider > .section-slide:nth-child(2) {
+            background-image: url(../image/wedadvisor-section-trends.jpeg);
+            -webkit-animation-delay: 8s;
+            -moz-animation-delay: 8s;
+            -o-animation-delay: 8s;
+            animation-delay: 8s;
+        }
+
+        section.layout-section#home-search > .section-slider > .section-slide:nth-child(3) {
+            background-image: url(../image/wedadvisor-section-search.jpg);
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            -o-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+
+        section.layout-section#home-search > .section-slider > .section-slide:nth-child(4) {
+            background-image: url(../image/wedadvisor-section-trends.jpeg);
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -o-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        @keyframes fade {
+            0.0% {
+                opacity: 1;
+            }
+
+            15.0% {
+                opacity: 1;
+            }
+
+            25.0% {
+                opacity: 0;
+            }
+
+            90.0% {
+                opacity: 0;
+            }
+
+            100.0% {
+                opacity: 1;
+            }
+        }
+
+    section.layout-section#home-search > .section-center {}
+
+        section.layout-section#home-search > .section-center > h1 {
+            position: relative;
+            float: left;
+            width: 100.0%;
+            margin: 0;
+            font-size: 60px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        section.layout-section#home-search > .section-center > h2 {
+            position: relative;
+            float: left;
+            width: 100.0%;
+            margin: 50px 0 0;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        section.layout-section#home-search > .section-center > .search {
+            position: relative;
+            float: left;
+            width: 100.0%;
+            margin: 65px 0 0;
+            padding: 2px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        @media (max-width: 768px) {
+            section.layout-section#home-search > .section-center > .search {
+                display: block;
+            }
+        }
+
+            section.layout-section#home-search > .section-center > .search > .search-field {
+                position: relative;
+                float: left;
+                height: 50px;
+            }
+
+            @media (max-width: 768px) {
+                section.layout-section#home-search > .section-center > .search > .search-field {
+                    width: 100.0%;
+                    padding: 0 16px;
+                }
+            }
+
+            @media (min-width: 769px) {
+                section.layout-section#home-search > .section-center > .search > .search-field {
+                    margin-left: 16px;
+                }
+            }
+
+                section.layout-section#home-search > .section-center > .search > .search-field > input {
+                    position: relative;
+                    float: left;
+                    height: 100.0%;
+                    padding: 0;
+                    border: 0;
+                    font-size: 13px;
+                    font-weight: 400;
+                    background-color: transparent;
+                }
+
+            section.layout-section#home-search > .section-center > .search > button {
+                position: relative;
+                float: left;
+                width: 136px;
+                height: 50px;
+                padding: 0;
+                border: 0;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 1);
+                background-color: rgba(var(--color-primary-red), var(--color-primary-green), var(--color-primary-blue), 1);
+                cursor: pointer;
+            }
+
+            @media (max-width: 768px) {
+                section.layout-section#home-search > .section-center > .search > button {
+                    width: 100.0%;
+                }
+            }
+
+            @media (min-width: 769px) {
+                section.layout-section#home-search > .section-center > .search > button {
+                    margin-left: 16px;
+                }
+            }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#home-popular {}
+
+    section.layout-section#home-popular .popular-grid {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        margin-top: 90px;
+    }
+
+        section.layout-section#home-popular .popular-grid .popular-grid-row {}
+
+            section.layout-section#home-popular .popular-grid .popular-grid-row a {
+                cursor: pointer;
+            }
+
+            @media (max-width: 640px) {
+                section.layout-section#home-popular .popular-grid .popular-grid-row:not(:last-child) a {
+                    margin-bottom: 4.0%;
+                }
+            }
+
+            @media (min-width: 641px) {
+                section.layout-section#home-popular .popular-grid .popular-grid-row:not(:last-child) a {
+                    margin-bottom: 2.0%;
+                }
+            }
+
+                section.layout-section#home-popular .popular-grid .popular-grid-row a .popular-grid-column {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    height: 200px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+
+                    section.layout-section#home-popular .popular-grid .popular-grid-row a .popular-grid-column .popular-grid-column-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        background-image: url(../image/wedadvisor-section-trends.jpeg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        -webkit-transition-property: all;
+                        -moz-transition-property: all;
+                        -ms-transition-property: all;
+                        -o-transition-property: all;
+                        transition-property: all;
+                        -webkit-transition-duration: 0.32s;
+                        -moz-transition-duration: 0.32s;
+                        -ms-transition-duration: 0.32s;
+                        -o-transition-duration: 0.32s;
+                        transition-duration: 0.32s;
+                        -webkit-transition-timing-function: initial;
+                        -moz-transition-timing-function: initial;
+                        -ms-transition-timing-function: initial;
+                        -o-transition-timing-function: initial;
+                        transition-timing-function: initial;
+                        -webkit-transition-delay: 0s;
+                        -moz-transition-delay: 0s;
+                        -ms-transition-delay: 0s;
+                        -o-transition-delay: 0s;
+                        transition-delay: 0s;
+                    }
+
+                    section.layout-section#home-popular .popular-grid .popular-grid-row a:hover .popular-grid-column .popular-grid-column-image {
+                        top: -40px;
+                        left: -40px;
+                        bottom: -40px;
+                        right: -40px;
+                    }
+
+                    section.layout-section#home-popular .popular-grid .popular-grid-row a .popular-grid-column .popular-grid-column-opacity {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        background-image: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.8) 0.0%, rgba(0, 0, 0, 0.4) 100.0%);
+                        background-image: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.8) 0.0%, rgba(0, 0, 0, 0.4) 100.0%);
+                        background-image: -ms-linear-gradient(to top, rgba(0, 0, 0, 0.8) 0.0%, rgba(0, 0, 0, 0.4) 100.0%);
+                        background-image: -o-linear-gradient(to top, rgba(0, 0, 0, 0.8) 0.0%, rgba(0, 0, 0, 0.4) 100.0%);
+                        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0.0%, rgba(0, 0, 0, 0.4) 100.0%);
+                        -webkit-transition-property: background;
+                        -moz-transition-property: background;
+                        -ms-transition-property: background;
+                        -o-transition-property: background;
+                        transition-property: background;
+                        -webkit-transition-duration: 0.32s;
+                        -moz-transition-duration: 0.32s;
+                        -ms-transition-duration: 0.32s;
+                        -o-transition-duration: 0.32s;
+                        transition-duration: 0.32s;
+                        -webkit-transition-timing-function: initial;
+                        -moz-transition-timing-function: initial;
+                        -ms-transition-timing-function: initial;
+                        -o-transition-timing-function: initial;
+                        transition-timing-function: initial;
+                        -webkit-transition-delay: 0s;
+                        -moz-transition-delay: 0s;
+                        -ms-transition-delay: 0s;
+                        -o-transition-delay: 0s;
+                        transition-delay: 0s;
+                    }
+
+                    section.layout-section#home-popular .popular-grid .popular-grid-row a:hover .popular-grid-column .popular-grid-column-opacity {
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+
+                    section.layout-section#home-popular .popular-grid .popular-grid-row a .popular-grid-column .popular-grid-column-name {
+                        position: absolute;
+                        top: 50.0%;
+                        width: 100.0%;
+                        margin: 0;
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, 1);
+                        -webkit-transform: translateY(-50.0%);
+                        -moz-transform: translateY(-50.0%);
+                        -ms-transform: translateY(-50.0%);
+                        -o-transform: translateY(-50.0%);
+                        transform: translateY(-50.0%);
+                    }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#home-sponsors {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+    section.layout-section#home-sponsors .sponsors-grid {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        margin-top: 90px;
+    }
+
+        section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row {
+            position: relative;
+            float: left;
+            width: 100.0%;
+        }
+
+            section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a {
+                position: relative;
+                float: left;
+                cursor: pointer;
+            }
+
+            @media (max-width: 768px) {
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a {
+                    width: 50.0%;
+                }
+
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a:nth-child(2n+1):not(:first-child) {
+                    clear: both;
+                }
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a {
+                    width: 33.3333333333%;
+                }
+
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a:nth-child(3n+1):not(:first-child) {
+                    clear: both;
+                }
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px) {
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a {
+                    width: 25.0%;
+                }
+
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a:nth-child(4n+1):not(:first-child) {
+                    clear: both;
+                }
+            }
+
+            @media (min-width: 1281px) {
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a {
+                    width: 16.6666666667%;
+                }
+
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a:nth-child(6n+1):not(:first-child) {
+                    clear: both;
+                }
+            }
+
+                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                }
+
+                    section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-image {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        padding: 35.0% 0;
+                        background-image: url(../image/wedadvisor-section-search.jpg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-opacity {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        -webkit-transition-property: background;
+                        -moz-transition-property: background;
+                        -ms-transition-property: background;
+                        -o-transition-property: background;
+                        transition-property: background;
+                        -webkit-transition-duration: 0.32s;
+                        -moz-transition-duration: 0.32s;
+                        -ms-transition-duration: 0.32s;
+                        -o-transition-duration: 0.32s;
+                        transition-duration: 0.32s;
+                        -webkit-transition-timing-function: initial;
+                        -moz-transition-timing-function: initial;
+                        -ms-transition-timing-function: initial;
+                        -o-transition-timing-function: initial;
+                        transition-timing-function: initial;
+                        -webkit-transition-delay: 0s;
+                        -moz-transition-delay: 0s;
+                        -ms-transition-delay: 0s;
+                        -o-transition-delay: 0s;
+                        transition-delay: 0s;
+                    }
+
+                    section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a:hover > .sponsors-grid-column > .sponsors-grid-column-opacity {
+                        background-color: rgba(0, 0, 0, 0.2);
+                    }
+
+                    section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content {
+                        position: absolute;
+                        top: 50.0%;
+                        left: 0;
+                        right: 0;
+                        width: 100.0%;
+                        -webkit-transform: translateY(-50.0%);
+                        -moz-transform: translateY(-50.0%);
+                        -ms-transform: translateY(-50.0%);
+                        -o-transform: translateY(-50.0%);
+                        transform: translateY(-50.0%);
+                    }
+
+                        section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-top,
+                        section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-middle,
+                        section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-bottom {
+                            position: relative;
+                            float: left;
+                            left: 50.0%;
+                            -webkit-transform: translateX(-50.0%);
+                            -moz-transform: translateX(-50.0%);
+                            -ms-transform: translateX(-50.0%);
+                            -o-transform: translateX(-50.0%);
+                            transform: translateX(-50.0%);
+                            clear: both;
+                        }
+
+                        section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-middle {
+                            margin-top: 14px;
+                        }
+
+                        section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-bottom {
+                            margin-top: 12px;
+                        }
+
+                            section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-top > i {
+                                position: relative;
+                                float: left;
+                                line-height: 15px;
+                                font-size: 17px;
+                                color: rgba(255, 193, 7, 1);
+                            }
+
+                            section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-middle > h5 {
+                                position: relative;
+                                float: left;
+                                width: 100.0%;
+                                margin: 0;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: rgba(255, 255, 255, 1);
+                            }
+
+                            section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-bottom > div {
+                                position: relative;
+                                float: left;
+                            }
+
+                            section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-bottom > div + div {
+                                margin-left: 12px;
+                            }
+
+                                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-bottom > div > i {
+                                    position: relative;
+                                    float: left;
+                                    margin-right: 4px;
+                                    line-height: 15px;
+                                    font-size: 15px;
+                                    color: rgba(255, 255, 255, 1);
+                                }
+
+                                section.layout-section#home-sponsors .sponsors-grid .sponsors-grid-row > a > .sponsors-grid-column > .sponsors-grid-column-content > .sponsors-grid-column-content-bottom > div > span {
+                                    position: relative;
+                                    float: left;
+                                    line-height: 15px;
+                                    letter-spacing: 1px;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    color: rgba(255, 255, 255, 1);
+                                }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#home-share {}
+
+    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+    section.layout-section#home-share .share-description {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        margin: 40px 0 0;
+        line-height: 24px;
+        font-size: 13px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    section.layout-section#home-share .share-grid {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        margin-top: 40px;
+    }
+
+        section.layout-section#home-share .share-grid .share-grid-row {}
+
+            section.layout-section#home-share .share-grid .share-grid-row a {
+                cursor: pointer;
+            }
+
+                section.layout-section#home-share .share-grid .share-grid-row a .share-grid-column {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    height: 64px;
+                    padding: 12px 0;
+                    padding-left: 80px;
+                }
+
+                    section.layout-section#home-share .share-grid .share-grid-row a .share-grid-column .share-grid-column-logo {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 64px;
+                        height: 64px;
+                        -webkit-border-radius: 50.0%;
+                        -moz-border-radius: 50.0%;
+                        border-radius: 50.0%;
+                        line-height: 64px;
+                        font-size: 30px;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 1);
+                        background-color: rgba(var(--color-primary-red), var(--color-primary-green), var(--color-primary-blue), 1);
+                    }
+
+                    section.layout-section#home-share .share-grid .share-grid-row a .share-grid-column .share-grid-column-name {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    section.layout-section#home-share .share-grid .share-grid-row a .share-grid-column .share-grid-column-description {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        margin-top: 8px;
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#home-trends {
+    background-attachment: fixed;
+    background-image: url(../image/wedadvisor-section-trends.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    section.layout-section#home-trends a {
+        position: relative;
+        float: left;
+        left: 50.0%;
+        width: 160px;
+        padding: 14px 0;
+        border: 2px solid rgba(255, 255, 255, 1);
+        margin-top: 40px;
+        margin-left: -80px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+    }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#home-categories {}
+
+    section.layout-section#home-categories .categories-grid {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        margin-top: 90px;
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6;
+    }
+
+    @media (max-width: 768px) {
+        section.layout-section#home-categories .categories-grid {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        section.layout-section#home-categories .categories-grid {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        section.layout-section#home-categories .categories-grid {
+            -webkit-column-count: 6;
+            -moz-column-count: 6;
+            column-count: 6;
+        }
+    }
+
+
+
+        section.layout-section#home-categories .categories-grid a {
+            position: relative;
+            float: left;
+            width: 100.0%;
+            line-height: 24px;
+            font-size: 13px;
+            font-weight: 400;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        section.layout-section#home-categories .categories-grid a:hover {
+            text-decoration: underline;
+        }

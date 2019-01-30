@@ -1,0 +1,410 @@
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+section.layout-section#search-search {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+    section.layout-section#search-search > .section-full {}
+
+        section.layout-section#search-search .search-filters {
+            position: relative;
+            float: left;
+        }
+
+        @media (max-width: 768px) {
+            section.layout-section#search-search .search-filters {
+                width: 100.0%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            section.layout-section#search-search .search-filters {
+                width: 260px;
+            }
+        }
+
+            section.layout-section#search-search .search-filters > .search-filters-group {
+                position: relative;
+                float: left;
+                width: 100.0%;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                background-color: rgba(255, 255, 255, 1);
+                overflow: hidden;
+            }
+
+            section.layout-section#search-search .search-filters > .search-filters-group + .search-filters-group {
+                margin-top: 20px;
+            }
+
+                section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-header {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    padding: 14px 18px;
+                    background-color: rgba(100, 100, 100, 1);
+                }
+
+                    section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-header > span {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        line-height: 14px;
+                        letter-spacing: 2px;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    padding: 18px;
+                }
+
+                    section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content input:not([type="checkbox"]),
+                    section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content select {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        height: 34px;
+                        padding: 0 12px;
+                        border: 1px solid rgba(235, 235, 235, 1);
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        font-size: 13px;
+                        font-weight: 400;
+                        background-color: transparent;
+                    }
+
+                    section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content .search-filters-group-content-item {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        padding-left: 24px;
+                    }
+
+                    section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content .search-filters-group-content-item + .search-filters-group-content-item {
+                        margin-top: 12px;
+                    }
+
+                        section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content .search-filters-group-content-item > input[type="checkbox"] {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 12px;
+                            height: 12px;
+                            margin: 0;
+                        }
+
+                        section.layout-section#search-search .search-filters > .search-filters-group > .search-filters-group-content .search-filters-group-content-item > label {
+                            position: relative;
+                            float: left;
+                            width: 100.0%;
+                            height: 12px;
+                            line-height: 12px;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: rgba(170, 170, 170, 1);
+                        }
+
+        section.layout-section#search-search .search-grid {
+            position: relative;
+            float: left;
+            padding: 24px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 1);
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            section.layout-section#search-search .search-grid {
+                width: 100.0%;
+                margin-top: 24px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            section.layout-section#search-search .search-grid {
+                margin-left: 24px;
+            }
+        }
+
+            section.layout-section#search-search .search-grid > .card {
+                position: relative;
+                float: left;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                margin-bottom: 2.0%;
+                overflow: hidden;
+            }
+
+            @media (max-width: 768px) {
+                section.layout-section#search-search .search-grid > .card {
+                    width: 49.0%;
+                }
+
+                section.layout-section#search-search .search-grid > .card:not(:nth-child(2n+1)) {
+                    margin-left: 2.0%;
+                }
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                section.layout-section#search-search .search-grid > .card {
+                    width: 49.0%;
+                }
+
+                section.layout-section#search-search .search-grid > .card:not(:nth-child(2n+1)) {
+                    margin-left: 2.0%;
+                }
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px) {
+                section.layout-section#search-search .search-grid > .card {
+                    width: 32.0%;
+                }
+
+                section.layout-section#search-search .search-grid > .card:not(:nth-child(3n+1)) {
+                    margin-left: 2.0%;
+                }
+            }
+
+            @media (min-width: 1281px) {
+                section.layout-section#search-search .search-grid > .card {
+                    width: 23.5%;
+                }
+
+                section.layout-section#search-search .search-grid > .card:not(:nth-child(4n+1)) {
+                    margin-left: 2.0%;
+                }
+            }
+
+                section.layout-section#search-search .search-grid > .card > .card-header {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    padding: 26.0% 0;
+                }
+
+                    section.layout-section#search-search .search-grid > .card > .card-header > .card-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        background-image: url(../image/wedadvisor-section-trends.jpeg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    section.layout-section#search-search .search-grid > .card > .card-header > .card-opacity {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        -webkit-transition-property: background;
+                        -moz-transition-property: background;
+                        -ms-transition-property: background;
+                        -o-transition-property: background;
+                        transition-property: background;
+                        -webkit-transition-duration: 0.32s;
+                        -moz-transition-duration: 0.32s;
+                        -ms-transition-duration: 0.32s;
+                        -o-transition-duration: 0.32s;
+                        transition-duration: 0.32s;
+                        -webkit-transition-timing-function: initial;
+                        -moz-transition-timing-function: initial;
+                        -ms-transition-timing-function: initial;
+                        -o-transition-timing-function: initial;
+                        transition-timing-function: initial;
+                        -webkit-transition-delay: 0s;
+                        -moz-transition-delay: 0s;
+                        -ms-transition-delay: 0s;
+                        -o-transition-delay: 0s;
+                        transition-delay: 0s;
+                    }
+
+                    section.layout-section#search-search .search-grid > .card > .card-header:hover > .card-opacity {
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+
+                    section.layout-section#search-search .search-grid > .card > .card-header > .card-tag {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        height: 22px;
+                        padding: 0 10px;
+                        -webkit-border-radius: 2px;
+                        -moz-border-radius: 2px;
+                        border-radius: 2px;
+                        background-color: rgba(var(--color-primary-red), var(--color-primary-green), var(--color-primary-blue), 1);
+                    }
+
+                        section.layout-section#search-search .search-grid > .card > .card-header > .card-tag > span {
+                            position: relative;
+                            float: left;
+                            line-height: 22px;
+                            font-size: 12px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            color: rgba(255, 255, 255, 1);
+                        }
+
+                    section.layout-section#search-search .search-grid > .card > .card-header > .card-rating {
+                        position: absolute;
+                        top: 13px;
+                        right: 10px;
+                    }
+
+                        section.layout-section#search-search .search-grid > .card > .card-header > .card-rating > i {
+                            position: relative;
+                            float: left;
+                            line-height: 15px;
+                            font-size: 17px;
+                            color: rgba(255, 193, 7, 1);
+                        }
+
+                section.layout-section#search-search .search-grid > .card > .card-content {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    padding: 20px;
+                    border-right: 1px solid rgba(236, 236, 236, 1);
+                    border-bottom: 1px solid rgba(236, 236, 236, 1);
+                    border-left: 1px solid rgba(236, 236, 236, 1);
+                }
+
+                    section.layout-section#search-search .search-grid > .card > .card-content > .card-name {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        margin: 0;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    section.layout-section#search-search .search-grid > .card > .card-content > .card-attributes {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        margin-top: 16px;
+                    }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-attributes > div {
+                            position: relative;
+                            float: left;
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-attributes > div + div {
+                            margin-left: 12px;
+                        }
+
+                            section.layout-section#search-search .search-grid > .card > .card-content > .card-attributes > div > i {
+                                position: relative;
+                                float: left;
+                                margin-right: 4px;
+                                line-height: 15px;
+                                font-size: 15px;
+                                color: rgba(114, 114, 114, 1);
+                            }
+
+                            section.layout-section#search-search .search-grid > .card > .card-content > .card-attributes > div > span {
+                                position: relative;
+                                float: left;
+                                line-height: 15px;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: rgba(114, 114, 114, 1);
+                            }
+
+                    section.layout-section#search-search .search-grid > .card > .card-content > .card-description {
+                        position: relative;
+                        float: left;
+                        margin: 16px 0 0;
+                        line-height: 22px;
+                        font-size: 13px;
+                        font-weight: 400;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: box;
+                        -webkit-box-orient: vertical;
+                        -moz-box-orient: vertical;
+                        -ms-box-orient: vertical;
+                        -o-box-orient: vertical;
+                        box-orient: vertical;
+                        -webkit-line-clamp: 5;
+                        -moz-line-clamp: 5;
+                        -ms-line-clamp: 5;
+                        -o-line-clamp: 5;
+                        line-clamp: 5;
+                        color: rgba(114, 114, 114, 1);
+                        overflow: hidden;
+                    }
+
+                    section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite  {
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        width: 15px;
+                        height: 15px;
+                        cursor: pointer;
+                    }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite > input[type="checkbox"] {
+                            position: absolute;
+                            display: none;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            margin: 0;
+                            width: 100.0%;
+                            height: 100.0%;
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite > span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            width: 100.0%;
+                            height: 100.0%;
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite > input[type="checkbox"] + span:after {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            width: 100.0%;
+                            height: 100.0%;
+                            line-height: 15px;
+                            font-size: 15px;
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite > input[type="checkbox"]:not(:checked) + span:after {
+                            content: "favorite_border";
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite:hover > input[type="checkbox"]:not(:checked) + span:after {
+                            color: rgba(244, 67, 54, 1);
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite > input[type="checkbox"]:checked + span:after {
+                            content: "favorite";
+                        }
+
+                        section.layout-section#search-search .search-grid > .card > .card-content > .card-favorite:not(:hover) > input[type="checkbox"]:checked + span:after {
+                            color: rgba(244, 67, 54, 1);
+                        }

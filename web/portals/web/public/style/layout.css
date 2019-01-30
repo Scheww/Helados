@@ -1,0 +1,315 @@
+#layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100.0%;
+    height: 100.0%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+    #layout > header#layout-header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 64px;
+        padding: 0 20px;
+        z-index: 4;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -ms-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 0.32s;
+        -moz-transition-duration: 0.32s;
+        -ms-transition-duration: 0.32s;
+        -o-transition-duration: 0.32s;
+        transition-duration: 0.32s;
+        -webkit-transition-timing-function: initial;
+        -moz-transition-timing-function: initial;
+        -ms-transition-timing-function: initial;
+        -o-transition-timing-function: initial;
+        transition-timing-function: initial;
+        -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -ms-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+
+    #layout > header#layout-header.layout-header-floating {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+        #layout > header#layout-header > nav {
+            position: relative;
+            float: right;
+        }
+
+            #layout > header#layout-header > nav > ul {
+                position: relative;
+                float: left;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            #layout > header#layout-header > nav > ul + ul {
+                margin-left: 100px;
+            }
+
+                #layout > header#layout-header > nav > ul > li {
+                    position: relative;
+                    float: left;
+                }
+
+                #layout > header#layout-header > nav > ul > li.button {
+                    height: 34px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                    background-color: rgba(var(--color-primary-red), var(--color-primary-green), var(--color-primary-blue), 1);
+                }
+
+                #layout > header#layout-header > nav > ul > li + li {
+                    margin-left: 50px;
+                }
+
+                    #layout > header#layout-header > nav > ul > li > a {
+                        position: relative;
+                        float: left;
+                        line-height: 34px;
+                        letter-spacing: 2px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        -webkit-transition-property: color;
+                        -moz-transition-property: color;
+                        -ms-transition-property: color;
+                        -o-transition-property: color;
+                        transition-property: color;
+                        -webkit-transition-duration: 0.32s;
+                        -moz-transition-duration: 0.32s;
+                        -ms-transition-duration: 0.32s;
+                        -o-transition-duration: 0.32s;
+                        transition-duration: 0.32s;
+                        -webkit-transition-timing-function: initial;
+                        -moz-transition-timing-function: initial;
+                        -ms-transition-timing-function: initial;
+                        -o-transition-timing-function: initial;
+                        transition-timing-function: initial;
+                        -webkit-transition-delay: 0s;
+                        -moz-transition-delay: 0s;
+                        -ms-transition-delay: 0s;
+                        -o-transition-delay: 0s;
+                        transition-delay: 0s;
+                    }
+
+                    #layout > header#layout-header > nav > ul > li.button > a {
+                        padding: 0 22px;
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                    #layout > header#layout-header:not(.layout-header-floating) > nav > ul > li > a {
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+    #layout > main#layout-content {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        /*
+        height: 100.0%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        */
+    }
+
+        #layout > main#layout-content > section.layout-section {
+            position: relative;
+            float: left;
+            width: 100.0%;
+            padding: 90px 0 100px;
+        }
+
+        #layout > main#layout-content > section.layout-section:first-child {
+            padding-top: 104px;
+        }
+
+        #layout > main#layout-content > section.layout-section.full-height {
+            min-height: 100.0%;
+        }
+
+            #layout > main#layout-content > section.layout-section > .section-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-image: url(../image/wedadvisor-section-trends.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #layout > main#layout-content > section.layout-section > .section-image.fixed {
+                background-attachment: fixed;
+            }
+
+            #layout > main#layout-content > section.layout-section > .section-opacity {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            #layout > main#layout-content > section.layout-section > .section-full {
+                position: relative;
+                float: left;
+                width: 100.0%;
+            }
+
+            #layout > main#layout-content > section.layout-section > .section-padding {
+                position: relative;
+                float: left;
+                width: 100.0%;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #layout > main#layout-content > section.layout-section > .section-center {
+                position: relative;
+                float: left;
+            }
+
+            @media (max-width: 1160px) {
+                #layout > main#layout-content > section.layout-section > .section-center {
+                    width: 100.0%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+
+            @media (min-width: 1161px) {
+                #layout > main#layout-content > section.layout-section > .section-center {
+                    width: 1120px;
+                    left: 50.0%;
+                    margin-left: -560px;
+                }
+            }
+
+    /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+    #layout > footer#layout-footer {
+        position: relative;
+        float: left;
+        width: 100.0%;
+        background-color: rgba(38, 38, 38, 1);
+    }
+
+        #layout > footer#layout-footer > #layout-footer-center {
+            position: relative;
+            float: left;
+            padding: 100px 0 120px;
+        }
+
+        @media (max-width: 1160px) {
+            #layout > footer#layout-footer > #layout-footer-center {
+                width: 100.0%;
+                padding: 100px 20px 120px;
+            }
+        }
+
+        @media (min-width: 1161px) {
+            #layout > footer#layout-footer > #layout-footer-center {
+                width: 1120px;
+                left: 50.0%;
+                margin-left: -560px;
+            }
+        }
+
+            #layout > footer#layout-footer > #layout-footer-center h3 {
+                position: relative;
+                float: left;
+                width: 100.0%;
+                margin: 0 0 38px;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left {}
+
+                #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left > ul {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                }
+
+                    #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left > ul > li {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                    }
+
+                    #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left > ul > li:not(:last-child) {
+                        margin-bottom: 18px;
+                    }
+
+                        #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left > ul > li > a {
+                            position: relative;
+                            float: left;
+                            width: 100.0%;
+                            text-decoration: none;
+                        }
+
+                            #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left > ul > li > a > i {
+                                position: relative;
+                                float: left;
+                                margin-right: 10px;
+                                line-height: 15px;
+                                font-size: 15px;
+                                color: rgba(255, 255, 255, 1);
+                            }
+
+                            #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-left > ul > li > a > span {
+                                position: relative;
+                                float: left;
+                                line-height: 15px;
+                                letter-spacing: 1px;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: rgba(255, 255, 255, 1);
+                            }
+
+            #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-right {}
+
+            @media (max-width: 640px) {
+                #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-right {
+                    margin-top: 38px;
+                }
+            }
+
+                #layout > footer#layout-footer > #layout-footer-center > #layout-footer-center-right > p {
+                    position: relative;
+                    float: left;
+                    width: 100.0%;
+                    margin: 0;
+                    line-height: 24px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: rgba(255, 255, 255, 1);
+                }

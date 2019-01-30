@@ -1,0 +1,159 @@
+label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #607d89;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    height: 22px;
+    padding: 4px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #455a64;
+    margin-bottom: 30px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-bottom: 2px solid #009486;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #bdbdbd;
+}
+
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #bdbdbd;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #bdbdbd;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #bdbdbd;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    height: 22px;
+    padding: 4px 16px 4px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #455a64;
+    margin-bottom: 30px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: url("../images/select-arrow.png");
+    background-position: top 10px right 0;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    border-bottom: 2px solid #009486;
+}
+
+button {
+    position: relative;
+    float: left;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    border: 0;
+    margin: 20px 0 0 -28px;
+    -webkit-border-radius: 50.0%;
+    -moz-border-radius: 50.0%;
+    -ms-border-radius: 50.0%;
+    -o-border-radius: 50.0%;
+    border-radius: 50.0%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #EEEEEE;
+}
+
+button:focus {
+    background-color: #EEEEEE;
+}
+
+button:active {
+    background-color: #E0E0E0;
+}
+
+button.colored {
+    background-color: #009486;
+}
+
+button:disabled {
+    background-color: #EEEEEE;
+    cursor: default;
+}
+
+button .material-icons {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 24px;
+}
+
+button.colored .material-icons {
+    color: #FFFFFF;
+}
+
+button:disabled .material-icons {
+    color: #BDBDBD;
+}

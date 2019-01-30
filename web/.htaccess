@@ -1,0 +1,30 @@
+RewriteEngine On
+AddDefaultCharset utf-8
+
+ErrorDocument 404 /404.php
+
+# Canonical redirect to https://www.dytar.com.ar
+
+RewriteCond %{HTTP_HOST}   ^dytar.com.ar$
+RewriteRule (.*) https://www.dytar.com.ar/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTP_HOST}   !^$
+RewriteCond %{HTTP_HOST}   ^www.dytar.com.ar$
+RewriteRule (.*) https://www.dytar.com.ar/$1 [R=301,L]
+
+
+<IfModule mod_headers.c>
+	<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
+		Header set Cache-Control "max-age=31536000, public"
+	</FilesMatch>
+	<FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2)$">
+		Header set Cache-Control "max-age=31536000, public"
+	</FilesMatch>
+	<FilesMatch "\.(js|css|txt|xml)$">
+		Header set Cache-Control "max-age=31536000, public"
+	</FilesMatch>
+</IfModule>
+
+

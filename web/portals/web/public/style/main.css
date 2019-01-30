@@ -1,0 +1,19 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    color: rgba(67, 67, 67, 1);
+}
+
+html, body {
+    width: 100.0%;
+    height: 100.0%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}

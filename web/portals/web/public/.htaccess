@@ -1,0 +1,16 @@
+Options -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+# RewriteCond %{SCRIPT_FILENAME} !-d
+# RewriteCond %{SCRIPT_FILENAME} !-f
+# RewriteRule ^([a-z]+)$ /portals/web/public/index.php?page=$1
+
+RewriteRule ^home$ /portals/web/public/index.php?page=home
+RewriteRule ^home/$ /portals/web/public/index.php?page=home
+RewriteRule ^search$ /portals/web/public/index.php?page=search
+RewriteRule ^search/$ /portals/web/public/index.php?page=search
+RewriteRule ^publication$ /portals/web/public/index.php?page=publication
+RewriteRule ^publication/$ /portals/web/public/index.php?page=publication

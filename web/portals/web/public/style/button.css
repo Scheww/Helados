@@ -1,0 +1,305 @@
+button.button {
+    position: relative;
+    min-width: 64px;
+    height: 36px;
+    padding: 0 16px;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+button.button:not(.button-icon):not(.button-mini-icon):not(.button-fab):not(.button-mini-fab) + button.button:not(.button-icon):not(.button-mini-icon):not(.button-fab):not(.button-mini-fab) {
+    margin-left: 12px;
+}
+
+button.button:not(:disabled):before {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 50.0%;
+    left: 50.0%;
+    padding: 0;
+    -webkit-border-radius: 50.0%;
+    -moz-border-radius: 50.0%;
+    border-radius: 50.0%;
+    -webkit-transform: translate(-50.0%, -50.0%);
+    -moz-transform: translate(-50.0%, -50.0%);
+    -ms-transform: translate(-50.0%, -50.0%);
+    -o-transform: translate(-50.0%, -50.0%);
+    transform: translate(-50.0%, -50.0%);
+    background-color: transparent;
+    -webkit-transition-property: width, padding, background-color;
+    -moz-transition-property: width, padding, background-color;
+    -ms-transition-property: width, padding, background-color;
+    -o-transition-property: width, padding, background-color;
+    transition-property: width, padding, background-color;
+    -webkit-transition-duration: 0s, 0s, 0.4s;
+    -moz-transition-duration: 0s, 0s, 0.4s;
+    -ms-transition-duration: 0s, 0s, 0.4s;
+    -o-transition-duration: 0s, 0s, 0.4s;
+    transition-duration: 0s, 0s, 0.4s;
+    -webkit-transition-timing-function: initial;
+    -moz-transition-timing-function: initial;
+    -ms-transition-timing-function: initial;
+    -o-transition-timing-function: initial;
+    transition-timing-function: initial;
+    -webkit-transition-delay: 0.4s, 0.4s, 0s;
+    -moz-transition-delay: 0.4s, 0.4s, 0s;
+    -ms-transition-delay: 0.4s, 0.4s, 0s;
+    -o-transition-delay: 0.4s, 0.4s, 0s;
+    transition-delay: 0.4s, 0.4s, 0s;
+}
+
+button.button:not(:disabled):active:before {
+    width: 200.0%;
+    padding: 100.0% 0;
+    -webkit-transition-property: width, padding, background-color;
+    -moz-transition-property: width, padding, background-color;
+    -ms-transition-property: width, padding, background-color;
+    -o-transition-property: width, padding, background-color;
+    transition-property: width, padding, background-color;
+    -webkit-transition-duration: 0.2s, 0.2s, 0s;
+    -moz-transition-duration: 0.2s, 0.2s, 0s;
+    -ms-transition-duration: 0.2s, 0.2s, 0s;
+    -o-transition-duration: 0.2s, 0.2s, 0s;
+    transition-duration: 0.2s, 0.2s, 0s;
+    -webkit-transition-timing-function: initial;
+    -moz-transition-timing-function: initial;
+    -ms-transition-timing-function: initial;
+    -o-transition-timing-function: initial;
+    transition-timing-function: initial;
+    -webkit-transition-delay: 0s, 0s, 0s;
+    -moz-transition-delay: 0s, 0s, 0s;
+    -ms-transition-delay: 0s, 0s, 0s;
+    -o-transition-delay: 0s, 0s, 0s;
+    transition-delay: 0s, 0s, 0s;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button:not(.button-raised):not(.button-dark) {
+    color: rgba(0, 0, 0, 1);
+    background-color: transparent;
+}
+
+button.button:not(.button-raised):not(.button-dark):hover {
+    background-color: rgba(154, 154, 154, 0.2);
+}
+
+button.button:not(.button-raised):not(.button-dark):focus {
+    background-color: rgba(154, 154, 154, 0.2);
+}
+
+button.button:not(.button-raised):not(.button-dark):active {
+    background-color: rgba(154, 154, 154, 0.2);
+}
+
+button.button:not(.button-raised):not(.button-dark):not(:disabled):active:before {
+    background-color: rgba(154, 154, 154, 0.2);
+}
+
+button.button:not(.button-raised):not(.button-dark):disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+    cursor: default;
+}
+
+button.button:not(.button-raised):not(.button-dark).button-primary {
+    color: rgba(var(--color-primary-red), var(--color-primary-green), var(--color-primary-blue), 1);
+}
+
+button.button:not(.button-raised):not(.button-dark).button-accent {
+    color: rgba(var(--color-accent-red), var(--color-accent-green), var(--color-accent-blue), 1);
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button:not(.button-raised).button-dark {
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+}
+
+button.button:not(.button-raised).button-dark:hover {
+    background-color: rgba(204, 204, 204, 0.125);
+}
+
+button.button:not(.button-raised).button-dark:focus {
+    background-color: rgba(204, 204, 204, 0.125);
+}
+
+button.button:not(.button-raised).button-dark:active {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+button.button:not(.button-raised).button-dark:not(:disabled):active:before {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+button.button:not(.button-raised).button-dark:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    cursor: default;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button.button-raised:not(.button-dark) {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(154, 154, 154, 0.2);
+    -webkit-box-shadow: var(--shadow-elevation-2);
+    -moz-box-shadow: var(--shadow-elevation-2);
+    box-shadow: var(--shadow-elevation-2);
+}
+
+button.button.button-raised:not(.button-dark):hover {
+    background-color: rgba(154, 154, 154, 0.2);
+}
+
+button.button.button-raised:not(.button-dark):focus {
+    background-color: rgba(154, 154, 154, 0.2);
+    -webkit-box-shadow: var(--shadow-elevation-4);
+    -moz-box-shadow: var(--shadow-elevation-4);
+    box-shadow: var(--shadow-elevation-4);
+}
+
+button.button.button-raised:not(.button-dark):active {
+    background-color: rgba(154, 154, 154, 0.2);
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18), 0 8px 16px 0 rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18), 0 8px 16px 0 rgba(0, 0, 0, 0.36);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18), 0 8px 16px 0 rgba(0, 0, 0, 0.36);
+}
+
+button.button.button-raised:not(.button-dark):not(:disabled):active:before {
+    background-color: rgba(154, 154, 154, 0.2);
+}
+
+button.button.button-raised:not(.button-dark):disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+button.button.button-raised:not(.button-dark).button-primary {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(var(--color-primary-red), var(--color-primary-green), var(--color-primary-blue), 1);
+}
+
+button.button.button-raised:not(.button-dark).button-accent {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(var(--color-accent-red), var(--color-accent-green), var(--color-accent-blue), 1);
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button.button-raised.button-dark {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: var(--shadow-elevation-2);
+    -moz-box-shadow: var(--shadow-elevation-2);
+    box-shadow: var(--shadow-elevation-2);
+}
+
+button.button.button-raised.button-dark:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.button.button-raised.button-dark:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: var(--shadow-elevation-4);
+    -moz-box-shadow: var(--shadow-elevation-4);
+    box-shadow: var(--shadow-elevation-4);
+}
+
+button.button.button-raised.button-dark:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18), 0 8px 16px 0 rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18), 0 8px 16px 0 rgba(0, 0, 0, 0.36);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18), 0 8px 16px 0 rgba(0, 0, 0, 0.36);
+}
+
+button.button.button-raised.button-dark:not(:disabled):active:before {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.button.button-raised.button-dark:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.12);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button.button-icon {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    -webkit-border-radius: 50.0%;
+    -moz-border-radius: 50.0%;
+    border-radius: 50.0%;
+}
+
+button.button.button-icon + button.button.button-icon {
+    margin-left: 16px;
+}
+
+    button.button.button-icon .material-icons {
+        font-size: 24px;
+    }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button.button-mini-icon {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    -webkit-border-radius: 50.0%;
+    -moz-border-radius: 50.0%;
+    border-radius: 50.0%;
+}
+
+    button.button.button-mini-icon .material-icons {
+        font-size: 20px;
+    }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button.button-fab {
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    -webkit-border-radius: 50.0%;
+    -moz-border-radius: 50.0%;
+    border-radius: 50.0%;
+}
+
+    button.button.button-fab .material-icons {
+        font-size: 24px;
+    }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+button.button.button-mini-fab {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    -webkit-border-radius: 50.0%;
+    -moz-border-radius: 50.0%;
+    border-radius: 50.0%;
+}
+
+    button.button.button-mini-fab .material-icons {
+        font-size: 24px;
+    }

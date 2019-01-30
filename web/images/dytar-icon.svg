@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 60" enable-background="new 0 0 40 60" xml:space="preserve">
+	<g>
+		<polygon fill="#E91E63" points="20,20 20,0 40,10 	"/>
+		<polygon fill="#9C27B0" points="20,20 40,10 40,30 	"/>
+		<polygon fill="#673AB7" points="20,40 20,20 40,30 	"/>
+		<polygon fill="#3F51B5" points="20,40 40,30 40,50 	"/>
+		<polygon fill="#2196F3" points="20,60 20,40 40,50 	"/>
+		<polygon fill="#009688" points="0,50 20,40 20,60 	"/>
+		<polygon fill="#8BC34A" points="0,50 0,30 20,40 	"/>
+		<polygon fill="#FFC107" points="0,30 20,20 20,40 	"/>
+	</g>
+</svg>

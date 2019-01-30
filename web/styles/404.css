@@ -1,0 +1,64 @@
+#sections {
+    height: 100.0%;
+}
+
+    section.section {
+        min-height: 100.0%;
+        background-color: #000000;
+        background-image: url("../images/404-background-pattern.png");
+        background-position: center;
+        background-repeat: repeat;
+    }
+
+        section.section .opacity {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+            section.section .middle {
+                position: absolute;
+                top: 50.0%;
+                left: 0;
+                right: 0;
+                -webkit-transform: translateY(-50.0%);
+                -moz-transform: translateY(-50.0%);
+                -ms-transform: translateY(-50.0%);
+                -o-transform: translateY(-50.0%);
+                transform: translateY(-50.0%);
+            }
+
+                section.section .middle p.title {
+                    margin: 20px 0 0;
+                    font-size: 18vh;
+                    font-weight: 400;
+                    text-align: center;
+                    color: #ffffff;
+                    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25), 2px -2px 10px rgba(0, 0, 0, 0.25), -2px -2px 10px rgba(0, 0, 0, 0.25), -2px 2px 10px rgba(0, 0, 0, 0.25);
+                }
+
+                section.section .middle p.description {
+                    margin: -15px 0 0;
+                    font-size: 3.5vh;
+                    font-weight: 300;
+                    text-align: center;
+                    color: #ffffff;
+                    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25), 2px -2px 10px rgba(0, 0, 0, 0.25), -2px -2px 10px rgba(0, 0, 0, 0.25), -2px 2px 10px rgba(0, 0, 0, 0.25);
+                }
+
+                section.section .logo {
+                    height: 60px;
+                    margin-top: 120px;
+                }
+
+                    section.section .logo svg {
+                        position: relative;
+                        float: left;
+                        width: 100.0%;
+                        height: 100.0%;
+                        -webkit-filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
+                        filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
+                    }
