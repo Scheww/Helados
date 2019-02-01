@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -169,6 +169,79 @@
                             font-weight: 800;
                         }
 
+            #section-2 {
+                width: 100%;
+                height: 650px;
+                position: relative;
+                float: left;
+            }
+
+                .section-half-left{
+                    width: 50%;
+                    position: relative;
+                    float: left;
+                }
+                    .section-half-left > img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 650px;
+                    }
+
+                .section-half-right{
+                    width: 50%;
+                    position: relative;
+                    float: right;
+                    height: 650px;
+                    text-align: center;
+                    padding: 8%;
+                }
+
+                    .section-half-right > h3 {
+                        letter-spacing:0.05em;
+                        font-size: 38px;
+                        font-family: 'Oswald', sans-serif;
+                        margin: 0;
+
+                    }
+
+                    .section-half-right > h5 {
+                        letter-spacing:0.05em;
+                        font-size: 24px;
+                        font-family: 'Pacifico', sans-serif;
+                        margin: 0;
+                    }
+
+                    .section-half-right > p {
+                        font-family: 'Oswald', sans-serif;
+                        margin: 50px 30px;
+                    }
+
+                         .menu-black {
+                                height: 42px;
+                                min-height: 33px;
+                                width: 130px;
+                                border: 2px solid #ffffff;
+                                margin-left: calc(50% - 65px);
+                                margin-top: 30px;
+                                padding-top: 2px;
+                                cursor: pointer;
+                                transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+                            }
+                            .menu-black:hover{
+                                background: #2F2E2E;
+                                color: white;
+                                border-color: #2F2E2E;
+                            }
+
+                            .menu-black > span {
+                                font-family: 'Oswald', sans-serif;
+                                font-size: 22px;
+                                font-weight: 800;
+                                transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+                            }
+
+
+
         </style>
     </head>
     <body>
@@ -205,6 +278,19 @@
                         </div>
                     </div>
                     <img class="banner-img" src="https://static.wixstatic.com/media/84770f_bdcc40e3b5ce45f4b672692e83f4917b~mv1.png/v1/fill/w_293,h_575,al_c,q_80,usm_0.66_1.00_0.01/84770f_bdcc40e3b5ce45f4b672692e83f4917b~mv1.webp" >
+                </div>
+            </section>
+            <section id="section-2">
+                <div class="section-half-left">
+                    <img src="https://static.wixstatic.com/media/baac51_dce92e80d8174b64b0505698a8444b3d.jpg/v1/fill/w_1539,h_651,al_c,q_85,usm_0.66_1.00_0.01/baac51_dce92e80d8174b64b0505698a8444b3d.webp" >
+                </div>
+                <div class="section-half-right">
+                    <h3 style=""> NUESTROS <br> SABORES</h3>
+                    <h5> ¡Frescos y sabrosos! </h5>
+                    <p>Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.</p>
+                    <div class="menu-black">
+                        <span>MENÚ</span>
+                    </div>
                 </div>
             </section>
         </div>
