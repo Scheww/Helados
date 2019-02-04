@@ -8,7 +8,7 @@
         <style>
             @font-face {
                 font-family: 'Lulo Clean';
-                src: url(Lulo_Clean.ttf);
+                src: url(Lulo_Clean.woff2);
                 font-weight: bold;
             }
             * {
@@ -148,6 +148,8 @@
                             font-weight: 900;
                         }
                     .menu {
+                        color: white;
+                        text-align: center;
                         height: 42px;
                         min-height: 33px;
                         width: 130px;
@@ -247,6 +249,42 @@
                 float: left;
                 background: #B8E8D4;
             }
+                .parallax {
+                    /* The image used */
+                    background-image: url("https://static.wixstatic.com/media/baac51_809fe275413a451fbe5e2904700e26ea.png/v1/fill/w_1621,h_1230,al_c,q_90,usm_0.66_1.00_0.01/baac51_809fe275413a451fbe5e2904700e26ea.webp");
+
+                    /* Full height */
+                    height: 100%;
+                    width: 100%;
+
+                    /* Create the parallax scrolling effect */
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .text-front-image{
+                    padding: 10%;
+                }
+
+                    .text-front-image > h3 {
+                        color: white;
+                        text-align: center;
+                        margin: 0px;
+                    }
+
+                    .text-front-image > h3 > span {
+                        font-size: 115px;
+                        font-family: 'Lulo Clean', cursive;
+                        font-weight: 900;
+                    }
+
+            @media only screen and (max-device-width: 1366px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
+            }
 
         </style>
     </head>
@@ -283,12 +321,12 @@
                             <span>MENÚ</span>
                         </div>
                     </div>
-                    <img class="banner-img" src="https://static.wixstatic.com/media/84770f_bdcc40e3b5ce45f4b672692e83f4917b~mv1.png/v1/fill/w_293,h_575,al_c,q_80,usm_0.66_1.00_0.01/84770f_bdcc40e3b5ce45f4b672692e83f4917b~mv1.webp" >
+                    <img class="banner-img" src="" >
                 </div>
             </section>
             <section id="section-2">
                 <div class="section-half-left">
-                    <img src="https://static.wixstatic.com/media/baac51_dce92e80d8174b64b0505698a8444b3d.jpg/v1/fill/w_1539,h_651,al_c,q_85,usm_0.66_1.00_0.01/baac51_dce92e80d8174b64b0505698a8444b3d.webp" >
+                    <img src="https://static.wixstatic.com/media/baac51_dce92e80d8174b64b0505698a8444b3d.jpg/v1/fill/w_1539,h_651,al_c,q_85,usm_0.66_1.00_0.01/baac51_dce92e80d8174b64b0505698a8444b3d.webp">
                 </div>
                 <div class="section-half-right">
                     <h3 style=""> NUESTROS <br> SABORES</h3>
@@ -299,15 +337,16 @@
                     </div>
                 </div>
             </section>
-            <section id="section-3">
-                <div>
-                    <div class="background-image">
-                        <img src="https://static.wixstatic.com/media/baac51_809fe275413a451fbe5e2904700e26ea.png/v1/fill/w_1621,h_1230,al_c,q_90,usm_0.66_1.00_0.01/baac51_809fe275413a451fbe5e2904700e26ea.webp">
-                    </div>
-                    <div class="text-front-image">
-
+            <section id="section-3" class="">
+                <div class="text-front-image parallax">
+                    <h3>
+                        <span>LIBRE DE <br> LACTOSA</span>
+                    </h3>
+                    <div class="menu">
+                        <span>MENÚ</span>
                     </div>
                 </div>
+                <!--<img src="https://static.wixstatic.com/media/baac51_809fe275413a451fbe5e2904700e26ea.png/v1/fill/w_1621,h_1230,al_c,q_90,usm_0.66_1.00_0.01/baac51_809fe275413a451fbe5e2904700e26ea.webp">-->
             </section>
         </div>
     </body>
