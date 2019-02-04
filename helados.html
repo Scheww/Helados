@@ -21,6 +21,25 @@
                 outline: none;
                 -webkit-tap-highlight-color: transparent;
             }
+            .parallax {
+                /* The image used */
+                /* Ponerla en en el div que voy a usar */
+
+                /* Full height */
+                height: 100%;
+                width: 100%;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            @media only screen and (max-device-width: 1366px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
+            }
 
             html, body {
                 padding: 0;
@@ -40,6 +59,18 @@
                 right: 0;
                 padding: 10px 20px 16px;
                 z-index: 100;
+            }
+
+            .subtitle {
+                text-align: center;
+            }
+
+            .subtitle > span {
+                color: #FFFF;
+                margin: 0;
+                font-weight: 600;
+                font-family: 'Oswald', sans-serif;
+                font-size: 30px;
             }
 
             .nav {
@@ -160,6 +191,11 @@
                         cursor: pointer;
                         transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
                     }
+
+                    .menu-extended {
+                        width: 190px!important;
+                        margin-left: calc(50% - 95px)!important;
+                    }
                         .menu:hover{
                             background: #2F2E2E;
                             border-color: #2F2E2E;
@@ -232,6 +268,7 @@
                                 cursor: pointer;
                                 transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
                             }
+
                             .menu-black:hover{
                                 background: #2F2E2E;
                                 color: white;
@@ -252,25 +289,14 @@
                 float: left;
                 background: #B8E8D4;
             }
-                .parallax {
-                    /* The image used */
-                    /* Ponerla en en el div que voy a usar */
 
-                    /* Full height */
-                    height: 100%;
-                    width: 100%;
 
-                    /* Create the parallax scrolling effect */
-                    background-attachment: fixed;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-
-                .text-front-image{
-                    padding: 10%;
+                #section-3 > .text-front-image{
                     background-image: url("https://static.wixstatic.com/media/baac51_809fe275413a451fbe5e2904700e26ea.png/v1/fill/w_1621,h_1230,al_c,q_90,usm_0.66_1.00_0.01/baac51_809fe275413a451fbe5e2904700e26ea.webp");
                 }
+                    .text-front-image{
+                        padding: 10%;
+                    }
 
                     .text-front-image > h3 {
                         color: white;
@@ -284,11 +310,7 @@
                         font-weight: 900;
                     }
 
-                @media only screen and (max-device-width: 1366px) {
-                    .parallax {
-                        background-attachment: scroll;
-                    }
-                }
+
 
             #section-4 {
                 width: 100%;
@@ -296,6 +318,17 @@
                 position: relative;
                 float: left;
             }
+
+            #section-5 {
+                width: 100%;
+                height: 780px;
+                position: relative;
+                float: left;
+                background: #ffbfb1;
+            }
+                #section-5 > .text-front-image{
+                    background-image: url("https://static.wixstatic.com/media/baac51_6728e43c48674e7d90ac20825b605525.png/v1/fill/w_1564,h_1230,al_c,q_85,usm_0.66_1.00_0.01/baac51_6728e43c48674e7d90ac20825b605525.webp");
+                }
 
         </style>
     </head>
@@ -325,6 +358,9 @@
             <section>
                 <div class="banner">
                     <div class="banner-text">
+                        <h5 class="subtitle">
+                            <span>ARTESANAL</span>
+                        </h5>
                         <h1>
                             <span>HELADO</span>
                         </h1>
@@ -348,8 +384,11 @@
                     </div>
                 </div>
             </section>
-            <section id="section-3" class="">
+            <section id="section-3">
                 <div class="text-front-image parallax">
+                    <h5 class="subtitle">
+                        <span>DISFRUTA</span>
+                    </h5>
                     <h3>
                         <span>LIBRE DE <br> LACTOSA</span>
                     </h3>
@@ -357,7 +396,6 @@
                         <span>MENÚ</span>
                     </div>
                 </div>
-                <!--<img src="https://static.wixstatic.com/media/baac51_809fe275413a451fbe5e2904700e26ea.png/v1/fill/w_1621,h_1230,al_c,q_90,usm_0.66_1.00_0.01/baac51_809fe275413a451fbe5e2904700e26ea.webp">-->
             </section>
             <section id="section-4">
                 <div class="section-half section-half-text section-half-left">
@@ -370,6 +408,19 @@
                 </div>
                 <div class="section-half section-half-right">
                     <img src="https://static.wixstatic.com/media/84770f_63ca1eacd5f54763a266562f45c05727.jpg/v1/fill/w_1564,h_650,al_c,q_85,usm_0.66_1.00_0.01/84770f_63ca1eacd5f54763a266562f45c05727.webp">
+                </div>
+            </section>
+            <section id="section-5">
+                <div class="text-front-image parallax">
+                    <h5 class="subtitle">
+                        <span>CATERING Y MAS</span>
+                    </h5>
+                    <h3>
+                        <span>EVENTOS</span>
+                    </h3>
+                    <div class="menu menu-extended">
+                        <span>PIDE UN DESEO</span>
+                    </div>
                 </div>
             </section>
         </div>
