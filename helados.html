@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
+        <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?9ukd8d">
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Condensed|Pacifico|Oswald" rel="stylesheet">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <style>
@@ -47,17 +49,20 @@
                 margin: 0;
             }
 
+            body {
+                background-color: white;
+            }
+
             .main {
                 width: 100%;
                 height: 100%;
             }
 
             #header {
-                position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
-                padding: 10px 20px 16px;
+                position: fixed;
                 z-index: 100;
             }
 
@@ -73,18 +78,23 @@
                 font-size: 30px;
             }
 
+            @media screen and (min-width: 400px) {
+            }
+
             .nav {
                 z-index: 10;
                 width: 100%;
+                position: relative;
+                float: left;
             }
                 .header-nav {
-                    text-align: left;
+                    text-align: center;
                     white-space: nowrap;
                     display: inline-block;
                     overflow: visible;
                     position: relative;
-                    left: 100px;
-                    top: 50px;
+                    width: 100%;
+                    margin-top: 50px;
                 }
 
                 .nav-left {
@@ -100,6 +110,7 @@
                         cursor: pointer;
                         float: left;
                         font-size: 18px;
+                        left: calc(50% - 93px);
                     }
                         .header-nav-li > p {
                             color: #000000;
@@ -109,6 +120,7 @@
                             font-weight: 400;
                             font-family: 'Oswald', sans-serif;
                             font-size: 19px;
+                            transition:  color 0.4s ease 0s;
 
                         }
                             .header-nav-li > p:hover {
@@ -140,6 +152,8 @@
                         background-color: black;
                         border-radius: 50%;
                         margin: 0 5px;
+                        color: white;
+                        padding: 8px;
                     }
 
             .banner {
@@ -235,6 +249,7 @@
                     height: 650px;
                     padding: 8%;
                     text-align: center;
+                    background-color: #ffffff;
                 }
 
                     .section-half-text > h3 {
@@ -330,6 +345,33 @@
                     background-image: url("https://static.wixstatic.com/media/baac51_6728e43c48674e7d90ac20825b605525.png/v1/fill/w_1564,h_1230,al_c,q_85,usm_0.66_1.00_0.01/baac51_6728e43c48674e7d90ac20825b605525.webp");
                 }
 
+            #section-7 {
+                background-color: #B8E8D4;
+            }
+                #section-7 > .parallax {
+                    background-image: url("https://static.wixstatic.com/media/baac51_863daade1baf47a8995907cb1f24d57c.png/v1/fill/w_1373,h_1080,al_c,q_85/baac51_863daade1baf47a8995907cb1f24d57c.webp");
+                }
+
+                    #section-7 > .parallax > img{
+                        width: 100%;
+                    }
+
+                #section-7 > h3 {
+                    text-align: center;
+                    color: #000000;
+                    background-color: white;
+                    margin: 0;
+                    padding: 25px;
+                    font-weight: 600;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 38px;
+                }
+
+            footer {
+                position: relative;
+                float: left;
+                width: 100%
+            }
         </style>
     </head>
     <body>
@@ -348,9 +390,33 @@
                     </div>
                     <div class="nav-right">
                         <ul class="header-nav">
-                            <li class="header-nav-li"><div class="social"><!--<object data="instagram-logo.svg" style="width:25px;height: 25px" type="image/svg+xml"></object>--></div></li>
-                            <li class="header-nav-li"><div class="social"><!--<object data="instagram-logo.svg" style="width:25px;height: 25px" type="image/svg+xml"></object>--></div></li>
-                            <li class="header-nav-li"><div class="social"><!--<object data="instagram-logo.svg" style="width:25px;height: 25px" type="image/svg+xml"></object>--></div></li>
+                            <li class="header-nav-li">
+                                <a rel="nofollow" >
+                                    <div class="social ">
+                                        <div title="Facebook" class="social-item">
+                                            <i class="socicon-facebook"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-nav-li">
+                                <a rel="nofollow" >
+                                    <div class="social">
+                                        <div title="Instagram" class="social-item">
+                                            <i class="socicon-instagram"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header-nav-li">
+                                <a rel="nofollow" >
+                                    <div class="social">
+                                        <div title="Twitter" class="social-item">
+                                            <i class="socicon-twitter"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -423,6 +489,30 @@
                     </div>
                 </div>
             </section>
+            <section id="section-6">
+                <div class="section-half section-half-left">
+                    <img src="https://static.wixstatic.com/media/baac51_eef1e420f03948978a0f613646ebe50b.jpg/v1/fill/w_1537,h_650,al_c,q_85,usm_0.66_1.00_0.01/baac51_eef1e420f03948978a0f613646ebe50b.webp">
+                </div>
+                <div class="section-half section-half-text section-half-right">
+                    <h3 style=""> POSTRES</h3>
+                    <h5> ¡Helados y más! </h5>
+                    <p>Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.</p>
+                    <div class="menu-black">
+                        <span>MENÚ</span>
+                    </div>
+                </div>
+            </section>
+            <section id="section-7">
+                <div class="parallax">
+                    <img src="https://static.wixstatic.com/media/baac51_ec98ba3fb62b4140be49e8c2fde05a73.png/v1/fill/w_1564,h_906,al_c,q_85,usm_0.66_1.00_0.01/baac51_ec98ba3fb62b4140be49e8c2fde05a73.webp">
+                </div>
+                <h3>
+                    #IcelandHelados
+                </h3>
+            </section>
+            <footer>
+
+            </footer>
         </div>
     </body>
 </html>
