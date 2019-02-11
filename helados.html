@@ -6,376 +6,27 @@
         <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
         <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?9ukd8d">
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Condensed|Pacifico|Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="main.css">
         <style>
-            @font-face {
-                font-family: 'Lulo Clean';
-                src: url(Lulo_Clean.woff2);
-                font-weight: bold;
-            }
-            * {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                font-family: "Roboto", sans-serif;
-                text-rendering: optimizeLegibility;
-                -webkit-font-smoothing: antialiased;
-                outline: none;
-                -webkit-tap-highlight-color: transparent;
-            }
-            .parallax {
-                /* The image used */
-                /* Ponerla en en el div que voy a usar */
 
-                /* Full height */
-                height: 100%;
-                width: 100%;
-
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            @media only screen and (max-device-width: 1366px) {
-                .parallax {
-                    background-attachment: scroll;
-                }
-            }
-
-            html, body {
-                padding: 0;
-                border: 0;
-                margin: 0;
-            }
-
-            body {
-                background-color: white;
-            }
-
-            .main {
-                width: 100%;
-                height: 100%;
-            }
-
-            #header {
-                top: 0;
-                left: 0;
-                right: 0;
-                position: fixed;
-                z-index: 100;
-            }
-
-            .subtitle {
-                text-align: center;
-            }
-
-            .subtitle > span {
-                color: #FFFF;
-                margin: 0;
-                font-weight: 600;
-                font-family: 'Oswald', sans-serif;
-                font-size: 30px;
-            }
-
-            @media screen and (min-width: 400px) {
-            }
-
-            .nav {
-                z-index: 10;
-                width: 100%;
-                position: relative;
-                float: left;
-            }
-                .header-nav {
-                    text-align: center;
-                    white-space: nowrap;
-                    display: inline-block;
-                    overflow: visible;
-                    position: relative;
-                    width: 100%;
-                    margin-top: 50px;
-                }
-
-                .nav-left {
-                    width: 33%;
-                    float:left;
-                }
-                    .header-nav-li {
-                        height: 25px;
-                        position: relative;
-                        box-sizing: border-box;
-                        overflow: visible;
-                        display: inline-block;
-                        cursor: pointer;
-                        float: left;
-                        font-size: 18px;
-                        left: calc(50% - 93px);
-                    }
-                        .header-nav-li > p {
-                            color: #000000;
-                            position: relative;
-                            float: left;
-                            margin: 0px 16px;
-                            font-weight: 400;
-                            font-family: 'Oswald', sans-serif;
-                            font-size: 19px;
-                            transition:  color 0.4s ease 0s;
-
-                        }
-                            .header-nav-li > p:hover {
-                                color: #706D6D;
-                            }
-
-                .nav-center {
-                    width: 33%;
-                    float:left;
-                }
-                    .nav-center > h1 {
-                        text-align: center;
-                        margin: 0;
-                        position: relative;
-                        letter-spacing: normal;
-                        margin-top: 15px;
-                        font-size: 50px;
-                        font-family: 'Pacifico', cursive;
-                    }
-
-                .nav-right{
-                    width: 33%;
-                    float:left;
-                }
-
-                    .social {
-                        width: 35px;
-                        height: 35px;
-                        background-color: black;
-                        border-radius: 50%;
-                        margin: 0 5px;
-                        color: white;
-                        padding: 8px;
-                    }
-
-            .banner {
-                position: relative;
-                float: left;
-                width: 100%;
-                height: 800px;
-                background-color: #fadc71;
-                min-height: 100%;
-            }
-                .banner-img {
-                    object-position: 50% 50%;
-                    width: 345px;
-                    height: 575px;
-                    object-fit: contain;
-                    left: calc( 50% - 177.5px);
-                    top: 130px;
-                    position: absolute;
-                }
-
-                .banner-text {
-                    width: 100%;
-                    text-align: center;
-                    color: white;
-                    padding-top: 20%;
-                    position: relative;
-                    z-index: 3;
-                }
-
-                    .banner-text > h1 {
-                        margin: 0px 10px;
-                    }
-
-                        .banner-text > h1 >span {
-                            font-size: 115px;
-                            font-family: 'Lulo Clean', cursive;
-                            font-weight: 900;
-                        }
-                    .menu {
-                        color: white;
-                        text-align: center;
-                        height: 42px;
-                        min-height: 33px;
-                        width: 130px;
-                        border: 2px solid #ffffff;
-                        margin-left: calc(50% - 65px);
-                        margin-top: 30px;
-                        padding-top: 2px;
-                        cursor: pointer;
-                        transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-                    }
-
-                    .menu-extended {
-                        width: 190px!important;
-                        margin-left: calc(50% - 95px)!important;
-                    }
-                        .menu:hover{
-                            background: #2F2E2E;
-                            border-color: #2F2E2E;
-                        }
-
-                        .menu > span {
-                            font-family: 'Oswald', sans-serif;
-                            font-size: 22px;
-                            font-weight: 800;
-                        }
-
-            #section-2 {
-                width: 100%;
-                height: 650px;
-                position: relative;
-                float: left;
-            }
-
-                .section-half-left{
-                    width: 50%;
-                    position: relative;
-                    float: left;
-                }
-                    .section-half > img {
-                            object-fit: cover;
-                            width: 100%;
-                            height: 650px;
-                    }
-
-                .section-half-right{
-                    width: 50%;
-                    position: relative;
-                    float: right;
-                }
-
-                .section-half-text{
-                    height: 650px;
-                    padding: 8%;
-                    text-align: center;
-                    background-color: #ffffff;
-                }
-
-                    .section-half-text > h3 {
-                        letter-spacing:0.05em;
-                        font-size: 38px;
-                        font-family: 'Oswald', sans-serif;
-                        margin: 0;
-
-                    }
-
-                    .section-half-text > h5 {
-                        letter-spacing:0.05em;
-                        font-size: 24px;
-                        font-family: 'Pacifico', sans-serif;
-                        margin: 0;
-                    }
-
-                    .section-half-text > p {
-                        font-family: 'Oswald', sans-serif;
-                        margin: 50px 30px;
-                    }
-
-                         .menu-black {
-                                height: 42px;
-                                min-height: 33px;
-                                width: 130px;
-                                border: 2px solid #ffffff;
-                                margin-left: calc(50% - 65px);
-                                margin-top: 30px;
-                                padding-top: 2px;
-                                cursor: pointer;
-                                transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-                            }
-
-                            .menu-black:hover{
-                                background: #2F2E2E;
-                                color: white;
-                                border-color: #2F2E2E;
-                            }
-
-                            .menu-black > span {
-                                font-family: 'Oswald', sans-serif;
-                                font-size: 22px;
-                                font-weight: 800;
-                                transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-                            }
-
-            #section-3 {
-                width: 100%;
-                height: 780px;
-                position: relative;
-                float: left;
-                background: #B8E8D4;
-            }
-
-
-                #section-3 > .text-front-image{
-                    background-image: url("https://static.wixstatic.com/media/baac51_809fe275413a451fbe5e2904700e26ea.png/v1/fill/w_1621,h_1230,al_c,q_90,usm_0.66_1.00_0.01/baac51_809fe275413a451fbe5e2904700e26ea.webp");
-                }
-                    .text-front-image{
-                        padding: 10%;
-                    }
-
-                    .text-front-image > h3 {
-                        color: white;
-                        text-align: center;
-                        margin: 0px;
-                    }
-
-                    .text-front-image > h3 > span {
-                        font-size: 115px;
-                        font-family: 'Lulo Clean', cursive;
-                        font-weight: 900;
-                    }
-
-
-
-            #section-4 {
-                width: 100%;
-                height: 650px;
-                position: relative;
-                float: left;
-            }
-
-            #section-5 {
-                width: 100%;
-                height: 780px;
-                position: relative;
-                float: left;
-                background: #ffbfb1;
-            }
-                #section-5 > .text-front-image{
-                    background-image: url("https://static.wixstatic.com/media/baac51_6728e43c48674e7d90ac20825b605525.png/v1/fill/w_1564,h_1230,al_c,q_85,usm_0.66_1.00_0.01/baac51_6728e43c48674e7d90ac20825b605525.webp");
-                }
-
-            #section-7 {
-                background-color: #B8E8D4;
-            }
-                #section-7 > .parallax {
-                    background-image: url("https://static.wixstatic.com/media/baac51_863daade1baf47a8995907cb1f24d57c.png/v1/fill/w_1373,h_1080,al_c,q_85/baac51_863daade1baf47a8995907cb1f24d57c.webp");
-                }
-
-                    #section-7 > .parallax > img{
-                        width: 100%;
-                    }
-
-                #section-7 > h3 {
-                    text-align: center;
-                    color: #000000;
-                    background-color: white;
-                    margin: 0;
-                    padding: 25px;
-                    font-weight: 600;
-                    font-family: 'Oswald', sans-serif;
-                    font-size: 38px;
-                }
-
-            footer {
-                position: relative;
-                float: left;
-                width: 100%
-            }
         </style>
     </head>
     <body>
         <div class="main">
+            <div class="nav-mobile-list closed">
+                <div class="nav-mobile-text">
+                    <i class="material-icons">
+                        clear
+                    </i>
+                    <ul class="header-nav-mobile">
+                        <li class="header-nav-mobile-li"><p>INICIO</p></li>
+                        <li class="header-nav-mobile-li"><p>SABORES</p></li>
+                        <li class="header-nav-mobile-li"><p>NOSOTROS</p></li>
+                    </ul>
+                </div>
+            </div>
             <header id="header">
                 <div class="nav">
                     <div class="nav-left">
@@ -418,6 +69,14 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div class="nav-mobile">
+                    <h1>Iceland</h1>
+                    <div class="nav-opener">
+                        <i class="material-icons">
+                            menu
+                        </i>
                     </div>
                 </div>
             </header>
